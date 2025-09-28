@@ -4,261 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/New BAFVISION LOGO 2.png" type="image/x-icon">
-    <title>Bafvision</title>
+    <title>Bafvision - Schedule a Consultation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
 
     <header class="main-header">
-        <a href="#" class="logo">
-            <img src="images/New BAFVISION Header LOGO 2.png" alt="BAFVISION Logo">
+        <a href="index.html" class="logo">
+            <img src="images/New BAFVISION Header LOGO 2.png" alt="BAFVISION interior design company logo">
         </a>
         <button class="menu-toggle" aria-label="Toggle navigation menu">
             <i class="fas fa-bars"></i>
         </button>
         <nav class="main-nav">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact us</a></li>
-                <li><a href="booking.html" class="cta-button header-cta">Get in Touch</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
             </ul>
+          
         </nav>
     </header>
 
-    <section class="hero">
-        <img src="images/lamp-design-with-digital-art-style.jpg" alt="Stylish interior design hero image" class="hero-image">
-        <div class="hero-content">
-            <h1 data-aos="fade-up" data-aos-duration="1000">Transforming Spaces, Inspiring Lives.</h1>
-            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Exquisite Interior Design for Modern Living.</p>
-            <a href="#portfolio" class="cta-button" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">View Our Work</a>
-        </div>
-    </section>
-
-    <section id="about" class="section">
+    <section id="booking" class="section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-right">About BAFVISION</h2>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-up" data-aos-delay="300">
-                    <p>BAFVISION is a premier interior decorating firm dedicated to creating beautiful and functional spaces that reflect the unique style of our clients. With a keen eye for detail and a passion for innovative design, we transform visions into reality.</p>
-                    <p> Our approach is deeply collaborative; we believe that the best designs are born from a partnership with our clients, ensuring that every space we craft is not only stunning but also perfectly tailored to your lifestyle and needs. From the initial conceptualization to the final installation, our team manages every step of the process with precision and care, providing a seamless and enjoyable experience.</p>
-                </div>
-                <div class="about-image" data-aos="fade-left" data-aos-delay="300">
-                    <img src="images/New BAFVISION LOGO 2.png" alt="BAFVISION Logo">
-                </div>
+            <h2 class="section-title">Schedule a Consultation</h2>
+            <div class="contact-form">
+                <p>Please fill out the form below to book a free 30-minute consultation with our team. We'll discuss your project needs and how we can bring your vision to life.</p>
+                <form name="booking-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="booking-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Interested Service</label>
+                        <select id="service" name="service">
+                            <option value="interior-design">Full Interior Design</option>
+                            <option value="remodeling">Home Remodeling</option>
+                            <option value="furniture-selection">Furniture Selection</option>
+                            <option value="virtual-consultation">Virtual Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Book My Consultation</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <section id="services" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card" data-aos="zoom-in" data-aos-duration="1000">
-                    <h3>Full-Service Design</h3>
-                    <p>Comprehensive design solutions from concept to installation. We handle everything to bring your space to life.</p>
-                    <button class="learn-more-btn" data-target="#full-service-modal">Learn More</button>
-                </div>
-                <div id="full-service-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close-btn">&times;</span>
-                        <h2>Full-Service Design</h2>
-                        <p>Our full-service design package is for clients who want a hands-off, comprehensive solution. We manage every aspect of the project, from the initial concept and planning to sourcing materials, supervising construction, and final installation. This service ensures a cohesive, professional result and a stress-free experience for you.</p>
-                    </div>
-                </div>
-
-                <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
-                    <h3>Renovation & Remodeling</h3>
-                    <p>Transform your existing space with modern updates and a fresh new look tailored to your lifestyle.</p>
-                    <button class="learn-more-btn" data-target="#renovation-modal">Learn More</button>
-                </div>
-                <div id="renovation-modal" class="modal">
-                     <div class="modal-content">
-                        <span class="close-btn">&times;</span>
-                        <h2>Renovation & Remodeling</h2>
-                        <p>Whether you're looking to update a single room or an entire home, our renovation services breathe new life into existing spaces. We work with skilled contractors to transform layouts, update fixtures, and modernize your home to better suit your lifestyle and aesthetic preferences.</p>
-                     </div>
-                </div>
-
-                <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-                    <h3>Color & Material Consultation</h3>
-                    <p>Expert advice on palettes, textures, and finishes to define your space's unique character and mood.</p>
-                    <button class="learn-more-btn" data-target="#color-modal">Learn More</button>
-                </div>
-                        <div id="color-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-btn">&times;</span>
-                    <h2>Color & Material Consultation</h2>
-                    <p>Choosing the right colors, textures, and finishes can be overwhelming. Our expert consultants provide tailored advice to create a harmonious and inspiring environment. We guide you in selecting materials that are both beautiful and durable, ensuring every element works together perfectly.</p>
-                </div>
-            </div>
-
-                <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-                    <h3>Industrial Cleaning</h3>
-                    <p>Post-construction and deep cleaning services to ensure your newly designed space is spotless and ready to be enjoyed.</p>
-                    <button class="learn-more-btn" data-target="#cleaning-modal">Learn More</button>
-                </div>       
-                <div id="cleaning-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close-btn">&times;</span>
-                        <h2>Industrial Cleaning</h2>
-                        <p>After a new design or renovation project is complete, our industrial cleaning service ensures your space is pristine and ready to be enjoyed. We handle everything from post-construction debris removal to a deep, thorough clean, leaving your newly designed space spotless.</p>
-                    </div>
-                </div>
-
-                <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
-                    <h3>Interior and Exterior Decoration</h3>
-                    <p>Holistic decorating services that seamlessly blend your indoor and outdoor spaces for a cohesive look.</p>
-                    <button class="learn-more-btn" data-target="#decoration-modal">Learn More</button>
-                </div>
-                        <div id="decoration-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-btn">&times;</span>
-                    <h2>Interior and Exterior Decoration</h2>
-                    <p>Our decorating services go beyond the indoors. We create a cohesive look that extends to your outdoor spaces, including patios, balconies, and gardens. We select furniture, lighting, and decor that seamlessly blend your indoor and outdoor environments for a unified and stylish feel.</p>
-                </div>
-            </div>
-
-                <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
-                    <h3>P.O.P (Plaster of Paris) Installation</h3>
-                    <p>Custom ceiling and wall designs using Plaster of Paris to add a touch of elegance and architectural detail.</p>
-                    <button class="learn-more-btn" data-target="#pop-modal">Learn More</button>
-                </div>
-                </div> <div id="pop-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                <h2>P.O.P. Installation (Plaster of Paris)</h2>
-                <p>Add a touch of elegance and architectural detail to your space with custom Plaster of Paris designs. Our skilled craftsmen specialize in creating unique ceiling moldings, cornices, and decorative wall features that transform ordinary rooms into extraordinary works of art.</p>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-down">Our Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/gallery img 5.jpg" alt="Project 1: A modern minimalist living room." />
-                    <div class="overlay">
-                        <h3>BAFVISION</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/gallery img 4.jpg" alt="Project 2: A classic, elegant bedroom." />
-                    <div class="overlay">
-                        <h3>BAFVISION</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
-                    <img src="images/gallery img 18.jpg" alt="Project 3: A productive and stylish commercial office." />
-                    <div class="overlay">
-                        <h3>BAFVISION</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
-                    <img src="images/gallery img 45.jpg" alt="Project 4: A luxurious kitchen with state-of-the-art appliances." />
-                    <div class="overlay">
-                        <h3>BAFVISION</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="500">
-                    <img src="images/gallery img 52.jpg" alt="Project 5: A cozy and rustic dining room." />
-                    <div class="overlay">
-                        <h3>BAFVISION</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="600">
-                    <img src="images/gallery img 44.jpg" alt="Project 6: A bright and airy home library." />
-                    <div class="overlay">
-                        <h3>BAFVISION</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="button-container">
-                    <a href="gallery.html" class="cta-button">See More</a>
-                </div>
-            </div>
-    </section>
-
-    <section id="why-choose-us" class="section">
-        <img src="images/armchair-green-living-room-with-copy-space.jpg" alt="Why choose us background" class="why-choose-bg-img">
-        <div class="container text-white">
-            <div class="header-content">
-                <h2 class="section-title text-white">Why work with BAFVISION</h2>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Trust & Integrity</h3>
-                    <p>We build long-lasting relationships with our clients based on transparency, communication, and mutual respect, ensuring your vision is always our priority.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-magic"></i>
-                    <h3>Creative Expertise</h3>
-                    <p>With years of experience and a passion for design, we transform ordinary spaces into extraordinary, personalized environments that inspire.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-drafting-compass"></i>
-                    <h3>Seamless Process</h3>
-                    <p>From initial consultation to the final reveal, our structured process ensures every detail is handled with care, making your design journey stress-free.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-award"></i>
-                    <h3>Quality & Excellence</h3>
-                    <p>We partner with the best suppliers and craftsmen to guarantee the highest standard of quality in every project, delivering results that exceed expectations.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Sustainable Design</h3>
-                    <p>We prioritize eco-friendly materials and energy-efficient solutions to create beautiful spaces that are kind to the environment.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-wallet"></i>
-                    <h3>Transparent Pricing</h3>
-                    <p>Our clear and detailed proposals ensure you know exactly what to expect, with no hidden costs or surprises along the way.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
-                    <p>"BAFVISION's team brought my vision to life with such professionalism and creativity. The new space is not only beautiful but also functional. I'm beyond impressed!"</p>
-                    <div class="client-info">
-                        <img src="images/Profile image.png" alt="Client 1" class="client-photo">
-                        <span class="client-name">Toyin O.</span>
-                    </div>
-                </div>
-                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
-                    <p>"I have worked with BAFVISION on several projects, and they have always delivered exceptional results. Their attention to detail and commitment to quality are unmatched."</p>
-                    <div class="client-info">
-                        <img src="images/Profile image.png" alt="Client 2" class="client-photo">
-                        <span class="client-name"> Caleb F.</span>
-                    </div>
-                </div>
-                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
-                    <p>"The attention to detail is remarkable. Every element was carefully considered, resulting in a space that is both elegant and comfortable. Highly recommend!"</p>
-                    <div class="client-info">
-                        <img src="images/Profile image.png" alt="Client 3" class="client-photo">
-                        <span class="client-name">Modupeola.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="new-footer bg-light">
+    <footer class="new-footer bg-light">
         <div class="container footer-grid">
             <div class="footer-about">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="images/BAFVISION Footer image.png" alt="BAFVISION interior design company logo">
                 </a>
                 <p>Transform your space into a reflection of your style with our expert interior design services. Creating beautiful, functional spaces that inspire.</p>
@@ -273,10 +84,9 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
-                   
                 </ul>
             </div>
             <div class="footer-contact">
@@ -289,14 +99,11 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; 2025 BAFVISION. All rights reserved. | Designed by Fortnat Caleb
+            &copy; 2025 BAFVISION. All rights reserved.
         </div>
     </footer>
-    
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-
-
 </body>
 </html>
