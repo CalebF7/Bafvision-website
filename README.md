@@ -30,25 +30,24 @@ Client Contact: Prominently featured contact information and social media links 
 		
 
 ## 💻 Getting Started
-Follow these steps to set up and run the BAFVISION website locally.
+#### Follow these steps to set up and run the BAFVISION website locally.
 
 Prerequisites
 You only need a modern web browser to view the site.
 
-Installation
+#### Installation
 Clone the repository:
 
 git clone https://github.com/YourUsername/Bafvision-Website.git
 
 
-Navigate to the project directory:
-
+#### Navigate to the project directory:
 cd Bafvision-Website
 
-Open the site:
+#### Open the site:
 Simply open the # index.html file in your preferred web browser.
 
-#Example command (may vary by OS)
+#### Example command (may vary by OS)
 open index.html
 
 
