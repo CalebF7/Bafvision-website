@@ -4,7 +4,7 @@ BAFVISION is a highly professional, fully responsive, and modern website templat
 This project emphasizes clean code architecture, performance optimization, and adherence to modern web standards, utilizing native browser features complemented by the AOS library for engaging, dynamic scrolling effects.
 
 
-# ✨ Key Features
+## ✨ Key Features
 Responsive Design: Optimized for seamless viewing across all devices (desktops, tablets, and smartphones).
 
 Dynamic Landing Page (index.html): Features dedicated sections for About, Services, Portfolio, and Contact.
@@ -21,14 +21,15 @@ Smooth Scrolling: Enhanced navigation experience using smooth scroll for interna
 
 Client Contact: Prominently featured contact information and social media links (WhatsApp, LinkedIn).
 
-# 🛠️ Technology Stack	
+## 🛠️ Technology Stack	
 - HTML5:                           Core structure and semantic markup.		
 - CSS3:                            styling, layout, and responsive design.		
 - JavaScript:                      (ES6+)	Interactivity, smooth scrolling, and menu toggling.		
 - Font Awesome:                    Professional and widely-used icon set.		
-- AOS (Animate On Scroll):	         Library for scroll-based entrance animations.		
+- AOS (Animate On Scroll):	         Library for scroll-based entrance animations.
+		
 
-# 💻 Getting Started
+## 💻 Getting Started
 Follow these steps to set up and run the BAFVISION website locally.
 
 Prerequisites
@@ -51,7 +52,7 @@ Simply open the # index.html file in your preferred web browser.
 open index.html
 
 
-# File Structure
+## File Structure
 The project follows a standard front-end structure:
 
 Bafvision-Website/
@@ -63,7 +64,7 @@ Bafvision-Website/
 └── images/             # Directory for all project images (not included in upload)y item 1
     └── favicon.png       # Site icon
 
-  # ⚖️ License
+  ## ⚖️ License
 This project is licensed under the MIT License. See the LICENSE file (if included in your repository) for details.
 
 © 2025 BAFVISION. All rights reserved. | Designed by Fortnat Caleb
